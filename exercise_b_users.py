@@ -55,12 +55,26 @@ users = {
 }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+print(users["Jonathan"]["twitter"])
 # 2. Get Erik's hometown
+print(users["Erik"]["home_town"])
 # 3. Get the array of Erik's lottery numbers
+print(users["Erik"]["lottery_numbers"])
 # 4. Get the species of Avril's pet Monty
+print(users["Avril"] ["pets"][0]["species"])
 # 5. Get the smallest of Erik's lottery numbers
+print(users["Erik"]["lottery_numbers"][2])
 # 6. Return an array of Avril's lottery numbers that are even
+print(users["Avril"]["lottery_numbers"][0] , [1] ,[3])
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+users["Erik"]["lottery_numbers"] = [7,18, 34, 8, 11, 24]
+print(users["Erik"]["lottery_numbers"])
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"]["home_town"] = "Edinburgh"
 # 9. Add a pet dog to Erik called "Fluffy"
+users["Erik"]["pets"].append({"name": "Fluffy", "species": "dog"})
+
 # 10. Add another person to the users dictionary
+users["iain"] = {"twitter": "iainfraser188", "lottery_numbers" : [10,32,22,1,21,43],"hometown" : "falkirk"}
+                
+
